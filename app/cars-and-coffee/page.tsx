@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { HeroImage } from "@/components/HeroImage";
 import { InquiryForm } from "@/components/InquiryForm";
 import { JsonLd } from "@/components/JsonLd";
 import { NextEventDate } from "@/components/NextEventDate";
@@ -96,14 +97,7 @@ export default function CarsAndCoffeePage() {
   return (
     <>
       <section className="hero hero--event" aria-labelledby="cc-title">
-        <Image
-          src={EVENT_HERO.src}
-          alt={EVENT_HERO.alt}
-          fill
-          priority
-          sizes="100vw"
-          className="hero__img hero__img--event"
-        />
+        <HeroImage src={EVENT_HERO.src} alt={EVENT_HERO.alt} className="hero__img hero__img--event" />
         <div className="hero__shade" />
         <div className="hero__content">
           <p className="eyebrow eyebrow--gold hero__kicker">Monthly · Stuart, Florida</p>

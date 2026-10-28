@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CarLine } from "@/components/CarLine";
+import { HeroImage } from "@/components/HeroImage";
 import { NextEventDate } from "@/components/NextEventDate";
 import { Reveal } from "@/components/Reveal";
 import { StickyCrossfade } from "@/components/StickyCrossfade";
@@ -54,12 +55,10 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="hero" aria-labelledby="hero-title">
-        <Image
+        <HeroImage
           src="/images/hero-ferrari-trio.jpg"
+          portraitSrc="/images/hero-ferrari-trio-portrait.jpg"
           alt="Ferrari 275 GTB, F12berlinetta and 365 GTB/4 Daytona parked beneath the neon clock at The Concours Garage"
-          fill
-          priority
-          sizes="100vw"
           className="hero__img"
         />
         <div className="hero__shade" />
